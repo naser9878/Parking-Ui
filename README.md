@@ -1,21 +1,21 @@
-# RESTool
+# Parking-UI
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/dsternlicht/RESTool/master/screenshots//restool_screenshot.png?raw=true" alt="RESTool Sample App"/>
+  <img src="https://raw.githubusercontent.com/dsternlicht/RESTool/master/screenshots//restool_screenshot.png?raw=true" alt="Parking-Ui Sample App"/>
 </p>
 
 The best tool in the neighborhood. Managing your RESTful APIs has never been so easy.
-RESTool gives you an out of the box UI that connects to your API with a simple configuration file.
+Parking-Ui gives you an out of the box UI that connects to your API with a simple configuration file.
 
-The idea behind it is simple. Given the fact that each entity in your API has a RESTful implementation, RESTool will help you to develop a tool for managing these entities in no time by simply edit a configuration file. No JavaScript. No CSS. No html. Just a pure JSON file.
+The idea behind it is simple. Given the fact that each entity in your API has a RESTful implementation, Parking-Ui will help you to develop a tool for managing these entities in no time by simply edit a configuration file. No JavaScript. No CSS. No html. Just a pure JSON file.
 
 ## Getting started
-Clone RESTool repo to your machine, and run npm install.
+Clone Parking-UI repo to your machine, and run npm install.
 
 ```
-git clone https://github.com/dsternlicht/RESTool.git
+git clone https://github.com/naser9878/Parking-Ui.git
 
-cd RESTool
+cd Parking-UI
 
 npm install
 ```
@@ -26,7 +26,7 @@ We used Angular 2 for developing this awesome tool, so make sure to install Angu
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Configuration
-One of the best things about RESTool (and the reason we actually we built it) is that you don't need to develop anything. Everything is configurable and may be set simply by editing the `config.json` file under the `/src` folder.
+One of the best things about Parking-Ui (and the reason we actually we built it) is that you don't need to develop anything. Everything is configurable and may be set simply by editing the `config.json` file under the `/src` folder.
 
 Here's a detailed list of properties you could add to your configuration file (just in case we added a `config-sample.json` file you could learn from).
 
@@ -43,7 +43,7 @@ Each 'page' is an object. And could have the following properties:
 The name of the page. Will be presented in the app's menu.
 
 ##### `id` (string)
-A unique identifier for the page. RESTool will use it to navigate between pages.
+A unique identifier for the page. Parking-Ui will use it to navigate between pages.
 
 ##### `description` (string)
 A short description about the page and its usage.
@@ -117,7 +117,7 @@ The key / name of the parameter that should be sent.
 A default value.
 
 ###### ``label`` (string)
-Query params will be editable in RESTool UI. This is the label the user will see in the form.
+Query params will be editable in Parking-Ui . This is the label the user will see in the form.
 
 ###### ``type`` (string)
 In order to render the query params form, we allow you to add the "type" field where you could define the type of the field.
@@ -145,7 +145,7 @@ queryParams: {
 
 
 ##### `display` (object)
-RESTool is going to present the data somehow. This is the object that defines how. It contains the following properties:
+Parking-Ui is going to present the data somehow. This is the object that defines how. It contains the following properties:
 
 ###### `type` (string | 'table')
 How would you like to present the data (at the moment we only support table view).
@@ -162,7 +162,7 @@ The name of the field that contains the value in the results.
 The type of the returning value.
 
 ###### `label` (string)
-A label that describes the field. Will be presented as table headers in RESTool.
+A label that describes the field. Will be presented as table headers in Parking-Ui.
 
 ###### `dataPath` (string)
 Use this field to let us know what is the path to get to the field value. For example, if this is a single result:
